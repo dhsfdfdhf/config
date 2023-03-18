@@ -1,4 +1,12 @@
-version: 
-  dev
-love: 
-  i love dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8881/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /patha/**
+      service-id: MICRO-PRODUCT
+    api-b:
+      path: /pathb/**
+      service-id: MICRO-ORDERS
