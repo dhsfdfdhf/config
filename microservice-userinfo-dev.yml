@@ -1,2 +1,4 @@
-version: dev
-love: i love dev
+version: 
+  dev
+love: 
+  i love dev
